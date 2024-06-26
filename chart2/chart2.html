@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Sales Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css2.css"> <!-- Pastikan untuk menyesuaikan href dengan lokasi file CSS Anda -->
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Bike Sales Dashboard</h1>
+            <h2>Bike Stores in the United States and Canada</h2>
+        </header>
+
+        <div class="revenue-profit">
+            <div class="revenue-us">Total Revenue United States: 30,599,566</div>
+            <div class="revenue-canada">Total Revenue Canada: 7,984,694</div>
+            <div class="profit-us">Total Profit United States: 13,820,106</div>
+            <div class="profit-canada">Total Profit Canada: 3,256,789</div>
+        </div>
+
+        <div class="charts">
+            <div class="chart">
+                <h3>Order Quantity by Product Category by Country</h3>
+                <div class="chart-container">
+                    <div class="chart-item half-width">
+                        <h4>United States</h4>
+                        <canvas id="barChartUS"></canvas>
+                    </div>
+                    <div class="chart-item half-width">
+                        <h4>Canada</h4>
+                        <canvas id="barChartCanada"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart">
+                <h3>Top 5 Order Quantity State by Country</h3>
+                <div class="chart-container">
+                    <div class="chart-item half-width">
+                        <h4>United States</h4>
+                        <canvas id="barChartStateUS"></canvas>
+                    </div>
+                    <div class="chart-item half-width">
+                        <h4>Canada</h4>
+                        <canvas id="barChartStateCanada"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <a href="/chart1/chart1.html" class="button">Back</a>
+            <a href="/home.html" class="button">Home</a>
+            <a href="/chart3/chart3.html" class="button">Next</a>
+        </div>
+    </div>
+
+    <script src="chart2.js"></script> <!-- Pastikan untuk menyesuaikan src dengan lokasi file JavaScript Anda -->
+</body>
+</html>

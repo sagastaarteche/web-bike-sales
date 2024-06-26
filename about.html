@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/cormorant-2" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>About Us</title>
+    <style>
+      .bg-custom-gradient {
+        background: rgb(157, 251, 174);
+        background: linear-gradient(
+          120deg,
+          rgba(157, 251, 174, 1) 0%,
+          rgba(202, 207, 250, 1) 44%,
+          rgba(173, 217, 245, 1) 100%
+        );
+      }
+    </style>
+  </head>
+  <body class="h-screen w-full relative">
+    <!-- bublechat -->
+    <div class="absolute z-0 right-0">
+      <img src="assets/blur1.svg" alt="" />
+    </div>
+    <nav id="navbar">
+      <a href="index.html" class="logo2">
+          <img src="assets/logo.png" alt="Logo">
+          <span>BIKE<br>SALES</span>    
+      </a>
+      <ul class="nav-menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="Insight.html">Result</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+  </nav>
+    <section class="mt-12 relative z-10">
+      <div class="w-[50rem] h-14 bg-[#E0E4FC] ml-12 rounded-r-lg rounded-tl-lg">
+        <div class="ml-8 flex h-14 items-center">
+          <h1 class="font-bold text-4xl text-center">
+            We’re a Team of Software Engineering
+          </h1>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6 mt-12 items-end mr-12">
+        <div
+          class="w-[30rem] h-14 bg-[#C1CAFE] ml-12 rounded-l-lg rounded-tr-lg"
+        >
+          <div class="mr-12 flex h-14 items-center justify-end">
+            <h1 class="font-bold text-4xl text-center">Our Talented Team</h1>
+          </div>
+        </div>
+        <div
+          class="w-[50rem] h-14 bg-[#C1CAFE] ml-12 rounded-l-lg rounded-tr-lg"
+        >
+          <div class="mr-4 flex h-14 items-center justify-end">
+            <h1 class="font-bold text-4xl text-center">
+              Hi! We are from Team 6 Section Semarang!
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cards -->
+    <section class="mx-24 mt-16 z-10 flex justify-center relative">
+      <div class="grid grid-cols-4 gap-4 w-full max-w-screen-xl p-4">
+        <!-- First card spanning 2 rows -->
+        <div
+          class="row-span-2 col-span-1 bg-[#E0E4FC] rounded-lg flex items-center justify-center h-full"
+        >
+          <div
+            class="flex flex-col w- h-[33rem] lg:h-[37rem] bg-[#E0E4FC] rounded-lg overflow-hidden"
+          >
+            <!-- Image half -->
+            <div class="h-1/2 w-full flex-shrink-0">
+              <img
+                src="assets/ramdani.png"
+                alt="Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <!-- Text half -->
+            <div class="h-1/2 w-full mx-auto p-4">
+              <h1 class="text-sm font-bold">M. Ramdhani Yusuf</h1>
+              <p class="text-xs">Project Leader</p>
+            </div>
+          </div>
+        </div>
+        <!-- Remaining cards forming a 3x4 grid -->
+        <div
+          class="col-span-1 bg-[#E0E4FC] w h rounded-lg flex items-center justify-center"
+        >
+          <div
+            class="flex flex-col w-64 lg:w-80 h-[16rem] lg:h-[18rem] bg-[#E0E4FC] rounded-lg overflow-hidden"
+          >
+            <div class="h-1/2 w-full flex-shrink-0">
+              <img
+                src="assets/mukhlish.png"
+                alt="Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="h-1/2 w-full mx-auto p-4">
+              <h1 class="text-sm font-bold">M. Mukhlish</h1>
+              <p class="text-xs">Front End Engineer</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-span-1 bg-[#E0E4FC] w h rounded-lg flex items-center justify-center"
+        >
+          <div
+            class="flex flex-col w-64 lg:w-80 h-[16rem] lg:h-[18rem] bg-[#E0E4FC] rounded-lg overflow-hidden"
+          >
+            <div class="h-1/2 w-full flex-shrink-0">
+              <img
+                src="assets/talitha.png"
+                alt="Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="h-1/2 w-full mx-auto p-4">
+              <h1 class="text-sm font-bold">A. Talitha Rezky A</h1>
+              <p class="text-xs">Front End Engineer</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-span-1 bg-[#E0E4FC] w h rounded-lg flex items-center justify-center"
+        >
+          <div
+            class="flex flex-col w-64 lg:w-80 h-[16rem] lg:h-[18rem] bg-[#E0E4FC] rounded-lg overflow-hidden"
+          >
+            <div class="h-1/2 w-full flex-shrink-0">
+              <img
+                src="assets/aulia.png"
+                alt="Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="h-1/2 w-full mx-auto p-4">
+              <h1 class="text-sm font-bold">Aulia Nurul</h1>
+              <p class="text-xs">Front End Engineer</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-span-1 bg-[#E0E4FC] w h rounded-lg flex items-center justify-center"
+        >
+          <div
+            class="flex flex-col w-64 lg:w-80 h-[16rem] lg:h-[18rem] bg-[#E0E4FC] rounded-lg overflow-hidden"
+          >
+            <div class="h-1/2 w-full flex-shrink-0">
+              <img
+                src="assets/wina.png"
+                alt="Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="h-1/2 w-full mx-auto p-4">
+              <h1 class="text-sm font-bold">Wina</h1>
+              <p class="text-xs">Front End Engineer</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-span-1 bg-[#E0E4FC] w h rounded-lg flex items-center justify-center"
+        >
+          <div
+            class="flex flex-col w-64 lg:w-80 h-[16rem] lg:h-[18rem] bg-[#E0E4FC] rounded-lg overflow-hidden"
+          >
+            <div class="h-1/2 w-full flex-shrink-0">
+              <img
+                src="assets/azis.png"
+                alt="Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="h-1/2 w-full mx-auto p-4">
+              <h1 class="text-sm font-bold">Azis Marwadin</h1>
+              <p class="text-xs">Deployment Team</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-span-1 bg-[#E0E4FC] w h rounded-lg flex items-center justify-center"
+        >
+          <div
+            class="flex flex-col w-64 lg:w-80 h-[16rem] lg:h-[18rem] bg-[#E0E4FC] rounded-lg overflow-hidden"
+          >
+            <div class="h-1/2 w-full flex-shrink-0">
+              <img
+                src="assets/alfini.png"
+                alt="Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="h-1/2 w-full mx-auto p-4">
+              <h1 class="text-sm font-bold">Alfini Yuliyanti</h1>
+              <p class="text-xs">Quality Assurance</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-span-1 block w h rounded-lg items-center justify-center"
+        ></div>
+        <div
+          class="col-span-1 bg-[#E0E4FC] w h rounded-lg flex items-center justify-center"
+        >
+          <div
+            class="flex flex-col w-64 lg:w-80 h-[16rem] lg:h-[18rem] bg-[#E0E4FC] rounded-lg overflow-hidden"
+          >
+            <div class="h-1/2 w-full flex-shrink-0">
+              <img
+                src="assets/rezi.png"
+                alt="Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="h-1/2 w-full mx-auto p-4">
+              <h1 class="text-sm font-bold">Muhammad Fahrezi</h1>
+              <p class="text-xs">Quality Assurance</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-span-1 bg-[#E0E4FC] w h rounded-lg flex items-center justify-center"
+        >
+          <div
+            class="flex flex-col w-64 lg:w-80 h-[16rem] lg:h-[18rem] bg-[#E0E4FC] rounded-lg overflow-hidden"
+          >
+            <div class="h-1/2 w-full flex-shrink-0">
+              <img
+                src="assets/namiroh.png"
+                alt="Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="h-1/2 w-full mx-auto p-4">
+              <h1 class="text-sm font-bold">Namiroh</h1>
+              <p class="text-xs">Quality Assurance</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-span-1 bg-[#E0E4FC] w h rounded-lg flex items-center justify-center"
+        >
+          <div
+            class="flex flex-col w-64 lg:w-80 h-[16rem] lg:h-[18rem] bg-[#E0E4FC] rounded-lg overflow-hidden"
+          >
+            <div class="h-1/2 w-full flex-shrink-0">
+              <img
+                src="assets/naufal.jpeg"
+                alt="Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="h-1/2 w-full mx-auto p-4">
+              <h1 class="text-sm font-bold">Naufal Aditresna</h1>
+              <p class="text-xs">Quality Assurance</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-span-1 w h rounded-lg flex items-center justify-center"
+        ></div>
+        <div
+          class="col-span-1 bg-[#E0E4FC] w h rounded-lg flex items-center justify-center"
+        >
+          <div
+            class="flex flex-col w-64 lg:w-80 h-[16rem] lg:h-[18rem] bg-[#E0E4FC] rounded-lg overflow-hidden"
+          >
+            <div class="h-1/2 w-full flex-shrink-0">
+              <img
+                src="assets/orton.png"
+                alt="Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="h-1/2 w-full mx-auto p-4">
+              <h1 class="text-sm font-bold">Rizky Ramadhan</h1>
+              <p class="text-xs">Pitch Deck Team</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-span-1 bg-[#E0E4FC] w h rounded-lg flex items-center justify-center"
+        >
+          <div
+            class="flex flex-col w-64 lg:w-80 h-[16rem] lg:h-[18rem] bg-[#E0E4FC] rounded-lg overflow-hidden"
+          >
+            <div class="h-1/2 w-full flex-shrink-0">
+              <img
+                src="assets/anin.png"
+                alt="Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="h-1/2 w-full mx-auto p-4">
+              <h1 class="text-sm font-bold">Anindya Lintang</h1>
+              <p class="text-xs">Pitch Deck Team</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-span-1 bg-[#E0E4FC] w h rounded-lg flex items-center justify-center"
+        >
+          <div
+            class="flex flex-col w-64 lg:w-80 h-[16rem] lg:h-[18rem] bg-[#E0E4FC] rounded-lg overflow-hidden"
+          >
+            <div class="h-1/2 w-full flex-shrink-0">
+              <img
+                src="https://wallpapers.com/images/featured/cool-profile-picture-87h46gcobjl5e4xu.jpg"
+                alt="Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="h-1/2 w-full mx-auto p-4">
+              <h1 class="text-sm font-bold">Lia Kusuma</h1>
+              <p class="text-xs">Pitch Deck Team</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="gradient-background">
+      <h1>Discover Your Adventure <br> with Your Dream Bike!</h1>
+  </div>
+
+  <footer>
+      <div class="footer-container">
+          <div class="footer-content">
+              <div class="footer-section">
+                  <h2>Company</h2>
+                  <ul>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Data Cleaning</a></li>
+                      <li><a href="#">Data Analyst</a></li>
+                      <li><a href="#">Data Visualization</a></li>
+                      <li><a href="#">Data Communication</a></li>
+                  </ul>
+              </div>
+              <div class="footer-section">
+                  <h2>Insight</h2>
+                  <ul>
+                      <li><a href="#">Background Problem</a></li>
+                      <li><a href="#">Statement Problem</a></li>
+                      <li><a href="#">Objective</a></li>
+                  </ul>
+              </div>
+              <div class="footer-section">
+                  <h2>Product</h2>
+                  <ul>
+                      <li><a href="#">Bikes</a></li>
+                      <li><a href="#">Accessories</a></li>
+                      <li><a href="#">Clothing</a></li>
+                  </ul>
+              </div>
+          </div>
+          
+          <div class="footer-bottom">
+              <div class="divider">
+                  <span>© Copyright Team-6 Semarang 2024 
+                      <a class="email" href="#"><img src="assets/email.png" alt="Email"></a>
+                      <a class="github" href="https://github.com/Kampus-Merdeka-Software-Engineering/km-feb24-semarang-6" target="_blank"><img src="assets/github.png" alt="GitHub"></a>
+                  </span>
+              </div>
+          </div>
+  </footer>
+</body>
+  </body>
+</html>

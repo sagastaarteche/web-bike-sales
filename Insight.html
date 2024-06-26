@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="index.html" class="logo2">
+            <img src="assets/logo.png" alt="Logo">
+            <span>BIKE<br>SALES</span>    
+        </a>
+        <ul class="nav-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Insight.html">Result</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="name-sub1">Background Problem</div>
+    <div class="container">
+        <div class="insight-awal">
+            <div class="box-content">
+                <li>Selisih besar total profit canada dan US</li>
+                <li>Perbedaan perilaku konsumen negara canada dan US</li>
+            </div>
+        </div>
+    </div>
+
+    <div class="name-sub2">Statement Problem</div>
+    <div class="container">
+
+        <div class="box kolom1">
+            <div class="box-content">
+                <p><b>Spesific:</b><br> 
+                    Canada memiliki selisih rata rata profit perorang 24,25% lebih rendah dibanding US<p>
+            </div>
+        </div>
+
+        <div class="box kolom2">
+            <div class="box-content">
+                <p><b>Measurable:</b><br>
+                    Profit per orang diukur dari rata rata Total Profit satu wilayah dibagi dengan jumlah konsumen di wilayah tersebut</p>
+            </div>
+        </div>
+
+        <div class="box kolom3">
+            <div class="box-content">
+                <p><b>Achievable:</b><br>
+                    Menerapkan kampanye pemasaran dan menilai strategi penetapan harga produk untuk meningkatkan keuntungan.<p>
+            </div>
+        </div>
+
+        <div class="box kolom4">
+            <div class="box-content">
+                <p><b>Relevant:</b><br>
+                    Memprioritaskan preferensi pelanggan yang memiliki dampak pada profitabilitas di wilayah canada.<p>
+            </div>
+        </div>
+
+        <div class="box kolom5">
+            <div class="box-content">
+                <p><b>Time Bound:</b><br>
+                    Meningkatkan keuntungan rata-rata per orang di Kanada sebesar 25-30% pada tahun berikutnya melalui strategi yang akan dilakukan.<p>
+            </div>
+        </div>
+    </div>
+
+    <div class="name-sub3">Objective</div>
+    <div class="container">
+        <div class="insight-awal">
+            <div class="box-content">
+                <p>Untuk mempersempit kesenjangan keuntungan antara Canada dan US dengan meningkatkan rata-rata keuntungan per pelanggan di Kanada sebesar 25-30% pada tahun depan.<p>
+            </div>
+        </div>
+    </div>
+
+    <div class="name-sub4">Result</div>
+    <div class="container">
+        <div class="box kolom1">
+            <div class="box-image">
+                <img id="avgs" src="assets/AVERAGES SALES BY PRODUCT CATEGORY BY COUNTRY.png" alt="Averages Sales">
+            </div>
+        </div>
+
+        <div class="box kolom2">
+            <div class="box-image">
+                <img id="avgs2" src="assets/AVERAGES SALES BY PRODUCT CATEGORY BY COUNTRY2.png" alt="Average Sales2">
+            </div>
+        </div>
+
+        <div class="box kolom3">
+            <div class="box-image">
+                <img id="ps" src="assets/PRODUCT SALES BY SEASON.png" alt="Product Sales">
+            </div>
+        </div>
+
+        <div class="box kolom4">
+            <div class="box-image">
+                <img id="ps2" src="assets/PRODUCT SALES BY SEASON2.png" alt="Product Sales2">
+            </div>
+        </div>
+
+        <div class="box kolom5">
+            <div class="box-image">
+                <img id="ys" src="assets/YEAR ON YEAR SALES PERFORMANCE.png" alt="Year Sales">
+            </div>
+        </div>
+
+        <div class="box kolom6">
+            <div class="box-image">
+                <img id="ys2" src="assets/YEAR ON YEAR SALES PERFOMANCE2.png" alt="Year Sales2">
+            </div>
+        </div>
+    </div>
+
+    <section class="center-table">
+        <div class="table">
+            <table id="salesTable">
+                <thead>
+                  <tr>
+                    <th>Day</th>
+                    <th>Month</th>
+                    <th>Year</th>
+                    <th>Customer Age</th>
+                    <th>Age Group</th>
+                    <th>Customer Gender</th>
+                    <th>Country</th>
+                    <th>State</th>
+                    <th>Product Category</th>
+                    <th>Sub Category</th>
+                    <th>Product</th>
+                    <th>Order Quantity</th>
+                    <th>Unit Cost</th>
+                    <th>unit Price</th>
+                    <th>Total Cost</th>
+                    <th>Revenue</th>
+                    <th>Profit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Data akan diisi melalui JavaScript -->
+                </tbody>
+            </table>
+            <div class="custom-pagination">
+                <button id="prevBtn">Previous</button>
+                <button id="nextBtn">Next</button>
+            </div>
+            <body>
+
+                <a href="/chart1/chart1.html" class="button-link">
+                    <button id="nextBtn">Go to Dashboard</button>
+                </a>
+                
+                </body>
+            <div class="dataTables_length_and_filter">
+                <div id="salesTable_length"></div>
+                <div id="salesTable_filter"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="gradient-background">
+        <h1>Discover Your Adventure <br> with Your Dream Bike!</h1>
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Data Cleaning</a></li>
+                        <li><a href="#">Data Analyst</a></li>
+                        <li><a href="#">Data Visualization</a></li>
+                        <li><a href="#">Data Communication</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Insight</h2>
+                    <ul>
+                        <li><a href="#">Background Problem</a></li>
+                        <li><a href="#">Statement Problem</a></li>
+                        <li><a href="#">Objective</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Product</h2>
+                    <ul>
+                        <li><a href="#">Bikes</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Clothing</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <div class="footer-bottom">
+                <div class="divider">
+                    <span>© Copyright Team-6 Semarang 2024 
+                        <a class="email" href="#"><img src="assets/email.png" alt="Email"></a>
+                        <a class="github" href="https://github.com/Kampus-Merdeka-Software-Engineering/km-feb24-semarang-6" target="_blank"><img src="assets/github.png" alt="GitHub"></a>
+                    </span>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>

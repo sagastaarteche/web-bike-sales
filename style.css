@@ -1,0 +1,1489 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+}
+
+/* Thumbnail */
+/* Tulisan bikes sales usa canada */
+header {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .links a:not(:last-child) {
+    margin-right: 20px;
+}
+
+.links a {
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #E0E4FC;
+    border: 0;
+    border-radius: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.links a:hover {
+    background-color: #cbccd6;
+}
+
+.links i {
+    margin: 5px;
+}
+
+.title {
+    color: #1f0f0f;
+    font-size: 76px;
+    font-weight: bold;
+}
+
+.logo1 {
+    margin-right: 10px;
+    display: inline-block;
+    width: 60px;
+    height: auto;
+    background-image: url('assets/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slider {
+    width: 1280px;
+    max-width: 100%;
+    height: 640px;
+    margin: 40px auto; /* Added margin for spacing around slider */
+    position: relative;
+    overflow: hidden;
+    padding: 10px; /* Added padding for inner spacing */
+    border-radius: 10px; /* Added border-radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box-shadow for a subtle shadow */
+    background-color: #fff; /* Added background color for better visibility */
+}
+
+.slider .list {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+
+.slider .list img {
+    width: 1280px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .buttons {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider .buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(106, 104, 104, 0.533);
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.slider .buttons button:hover {
+    background-color: rgba(61, 61, 61, 0.533); 
+}
+
+.slider .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(106, 104, 104, 0.533);
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.slider .dots li.active {
+    width: 30px;
+}
+
+/* Untuk Navbar */
+#navbar {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+#navbar span {
+    padding: 0 3px 3px 0px;
+    position: relative;
+    color: #000;
+}
+
+#navbar span::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #6970ee;
+    transition: all 0.3s ease;
+}
+
+#navbar span:hover::after {
+    width: 100%;
+}
+
+#navbar span:hover {
+    color: #6970ee;
+}
+
+.logo2 {
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.logo2 img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo2 span {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding-right: 50px;
+    display: flex;
+    gap: 8px;
+}
+
+.nav-menu li {
+    display: flex;
+}
+
+.nav-menu a {
+    display: block;
+    position: relative;
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    font-size: 16px;
+}
+
+.nav-menu a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #6970ee;
+    transition: all 0.3s ease;
+}
+
+.nav-menu a:hover::after{
+    width: 100%;
+}
+
+.nav-menu a:hover {
+    color: #6970ee;
+}
+
+/* Untuk halaman jobdesk html */
+.name-job {
+    margin-top: 1rem;
+    padding-top: 70px;
+    padding-left: 80px;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 280px;
+}
+
+.card {
+    background-color: #E0E4FC;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.project-leader {
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+}
+
+.data1, .data2, .data3, .data4 {
+    grid-column: span 2;
+}
+
+.data5, .data6, .data7, .data8{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    grid-column: span 2;
+}
+
+
+.data5 img, .data6 img, .data7 img, .data8 img{ 
+    margin-right: 50px;
+}
+
+.card-content {
+    max-width: 60%;
+}
+
+.card-content h2 {
+    font-size: 32px;
+    margin: 10px 0px 10px 0px;
+}
+
+.card-content ul {
+    font-size: 16px;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.card-content ul li {
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+
+.card-image {
+    flex-shrink: 0;
+}
+
+.card-image img {
+    height: auto;
+    width: 100px;
+}
+
+/* Home HTML */
+#judul {
+    padding: 65px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.name-bike{
+    font-size: 64px;
+    background-color: #AED3FF;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.container-home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px;
+}
+
+#hero {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hero p {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#hero ul {
+    padding-right: 100px;
+}
+
+#hero ul li {
+    list-style: none;
+    font-size: 24px;
+}
+
+#hero img {
+    display: block;
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+}
+
+#product {
+    padding-top: 180px;
+    text-align: center;
+}
+
+#judul-product {
+    display: flex;
+    color: #000000;
+    margin-bottom: 30px;
+    padding: 50px 20px 0px 130px;
+}
+
+.name-product {
+    font-size: 55px;
+    font-weight: 300;
+    border-radius: 20px;
+    background-color: #AED3FF;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.product-categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.product-category {
+    text-align: center;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-category img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.product-category p {
+    font-size: 25px;
+    font-weight: 300;
+    color: #333;
+    margin-top: 10px;
+    display: block;
+}
+
+#result-section {
+    padding: 200px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.result-container {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 60px;
+}
+
+.dashboard img {
+    width: 700px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 79px;
+}
+
+.result-label {
+    background-color: #CEFDF4;
+    font-weight: 300;
+    font-size: 55px;
+    padding: 20px 100px;
+    border-radius: 30px;
+}
+
+.jobdesc {
+    margin-top: 200px;
+    font-size: 50px;
+    font-weight: 300;
+    padding-left: 80px;
+    color: #000000;
+}
+
+.jobdesc a{
+    background-color: #E0E4FC;
+    border-radius: 30px;
+    padding: 20px 40px;
+}
+
+.jobdesc a:hover {
+    background-color: #6970ee;
+    transition: all 0.3 ease;
+}
+
+#jobs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 54px;
+    padding: 50px 80px;
+}
+
+.job-roles {
+    background-color: #E0E4FC;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.job-role {
+    justify-content: center;
+    grid-column: span 2;
+    text-align: center;
+}
+
+.description {
+    padding-left: 35px;
+}
+
+.description h3{
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.description p{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+
+.job-role img {
+    width: 150px;
+    height: auto;
+}
+
+/* insight html */
+.name-sub1 {
+    margin-top: 150px;
+    padding-top: 25px;
+    padding-left: 80px;
+    font-weight: bold;
+    font-size: 38px;
+    background-color: #CEFDF4;
+    border-radius: 30px 30px 30px 0;
+    width: 573px;
+    height: 90px;
+    margin-left: 80px;
+}
+
+.name-sub2 {
+    margin: 100px 200px 0px 750px;
+    padding: 20px 80px;
+    font-weight: bold;
+    font-size: 38px;
+    background-color: #CEFDF4;
+    border-radius: 30px 30px 0 30px;
+}
+
+.name-sub3 {
+    margin-top: 150px;
+    padding-top: 25px;
+    padding-left: 80px;
+    font-weight: bold;
+    font-size: 38px;
+    background-color: #CEFDF4;
+    border-radius: 30px 30px 30px 0;
+    width: 573px;
+    height: 90px;
+    margin-left: 80px;
+}
+
+.name-sub4 {
+    margin-top: 100px;
+    padding-top: 25px;
+    padding-left: 80px;
+    font-weight: bold;
+    font-size: 38px;
+    background-color: #CEFDF4;
+    border-radius: 30px 30px 0 30px;
+    width: 573px;
+    height: 90px;
+    margin-left: 865px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 80px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kolom1, .kolom2, .kolom3, .kolom4, .kolom5, .kolom6 {
+    grid-column: span 2;
+}
+
+.box-content {
+    max-width: 60%;
+}
+
+.box-content h2 {
+    font-size: 50px;
+    margin-top: 0;
+}
+
+.box-content li {
+    padding-left: 20px;
+    margin: 0;
+    font-size: 25px;
+}
+
+.box-content p {
+    margin: 0 0 10px 0;
+    font-size: 25px;
+}
+
+.box-image {
+    flex-shrink: 0;
+    border-radius: 20px;
+    padding-left: 110px;
+}
+
+.box-image img {
+    height: 150px;
+    width: 350px;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 10px 10px 4px #E0E4FC;
+}
+
+.center-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+table.dataTable {
+    margin: 0 auto;
+}
+
+.dataTables_wrapper {
+    text-align: center;
+}
+
+.custom-pagination {
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+#prevBtn,
+#nextBtn {
+    background-color: #33deab; /* Warna latar biru */
+    color: #ffffff; /* Warna teks putih */
+    border-radius: 30px; /* Border radius 30px */
+    padding: 10px 20px; /* Padding agar tombol lebih besar */
+    border: none; /* Menghilangkan border */
+    cursor: pointer; /* Mengubah kursor saat mengarah ke tombol */
+    margin: 5px; /* Jarak antar tombol */
+    transition: background-color 0.3s; /* Animasi perubahan warna latar */
+}
+
+/* Hover effect */
+#prevBtn:hover,
+#nextBtn:hover {
+    background-color: #00b896; /* Perubahan warna latar saat hover */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 10px;
+    max-width: 800px;
+    margin: auto;
+    align-items: center;
+}
+
+#salesTable {
+    background-color: #CEFDF4; /* Warna latar belakang ungu */
+    color: black; /* Warna teks hitam */
+}
+
+/* Styling untuk garis pembatas antar kolom */
+#salesTable th,
+#salesTable td {
+    border: 1px solid #CEFDF4; /* Garis pembatas antar kolom berwarna putih */
+}
+
+.dropdown-filter {
+    margin: 100px;
+    margin-bottom: 0;
+    width: 200px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+#barchartCountry {
+    width: 70%; /* Adjust width as needed */
+    height: 500px;
+}
+
+#barchartGender {
+    width: 70%; /* Adjust width as needed */
+    height: 500px;
+}
+
+/* Footer */
+.gradient-background {
+    margin-top: 200px;
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(-64deg,#CACFFA, #C9D4EF, #AED3FF, #9BFFA5);
+}
+
+.gradient-background h1 {
+    color: #1D2130;
+    font-size: 62px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #1D2130;
+    color: #ccc;
+    font-size: 12px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 0;
+}
+
+.footer-section h2 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #888888;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.divider span {
+    color: #888888;
+}
+
+.divider span::before,
+.divider span::after {
+    content: " ";
+    display: inline-flex;
+    width: 300px; /* Adjust width to control the length of the lines */
+    border-top: 1px solid #888888; /* White border color */
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.divider a {
+    padding-left: 5px;
+    align-items: center;
+}
+
+.email img{
+    width: 17px;
+    height: auto;
+}
+
+.github img{
+    width: 16px;
+    height: auto;
+}
+
+/* contact us */
+.content {
+    text-align: center;
+}
+
+.border-container {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 56px;
+}
+
+.form-container {
+    background-color: #E0E4FC;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="subject"],
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box  
+}
+
+.we-will {
+    font-size: 16px;
+}
+
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(14, 43, 69);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; 
+    margin-top: 10px;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #6970ee;
+}
+
+.side-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.side-form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contact-info img {
+    margin-right: 10px;
+}
+
+.mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: bold;
+    position: relative;
+    width: 100%;  /* Sesuaikan dengan lebar .form-container */
+    max-width: 800px;  /* Sesuaikan dengan lebar .form-container */
+    margin: 0 auto;
+}
+
+.mail img {
+    width: 48px;
+    height: auto;
+}
+
+@media (width >= 901px) and (width <= 1449px) {
+    /* responsive index */
+    #hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero ul {
+        padding-right: 0px;
+        padding-top: 40px;
+    }
+
+    header {
+        padding-top: 40px;
+    }
+
+     .title {
+        font-size: 60px;
+     }
+
+     .logo1 {
+        width: 44px;
+     }
+
+     .links a {
+        font-size: 14px;
+        padding: 8px;
+     }
+
+     .links i {
+        margin: 4px;
+     }
+      
+    nav .links a:not(:last-child) {
+        margin-right: 18px;
+    }
+
+    .slider {
+        width: 800px;
+        height: 400px;
+    }
+
+    .slider .buttons button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .slider .dots li {
+        list-style: none;
+        width: 10px;
+        height: 10px;
+        margin: 10px;
+    }
+
+    .slider .dots li.active {
+        width: 30px;
+    }
+     /* end responsive index */
+
+
+    /* responsive jobdesk */
+    .project-leader {
+        grid-column: 1 / 4;
+    }
+
+    .data1, .data2, .data3, .data4 {
+        grid-column: 1 / 4;
+    }
+
+    .data5, .data6, .data7, .data8 {
+        grid-column: 1 / 4;
+    }
+    /* end responsive jobdesk */
+
+
+    /* responsive insight */
+}
+
+@media (width >= 601px) and (width <= 900px) {
+    /* responsive index */
+    #hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero ul {
+        padding-right: 0px;
+        padding-top: 40px;
+    }
+    header {
+        padding-top: 40px;
+    }
+
+     .title {
+        font-size: 40px;
+     }
+
+     .logo1 {
+        width: 45px;
+     }
+
+     .links a {
+        font-size: 12px;
+        padding: 6px;
+     }
+
+     .links i {
+        margin: 3px;
+     }
+      
+    nav .links a:not(:last-child) {
+        margin-right: 15px;
+    }
+
+    .slider {
+        width: 500px;
+        height: 250px;
+    }
+
+    .slider .buttons button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .slider .dots li {
+        list-style: none;
+        width: 10px;
+        height: 10px;
+        margin: 10px;
+    }
+
+    .slider .dots li.active {
+        width: 30px;
+    }
+     /* end responsive index */
+
+     /* responsive home */
+    .name-bike {
+        font-size: 50px;
+    }
+
+    #hero p {
+        font-size: 25px;
+    }
+
+    #hero ul li{
+        font-size: 15px;
+    }
+
+    #hero img {
+        width: 400px;
+    }
+
+    .name-product {
+        font-size: 40px;
+    }
+
+    .product-category img {
+        width: 135px;
+    }
+
+    .result-label {
+        font-size: 35px;
+        padding: 15px 85px;
+        border-radius: 25px;
+    }
+
+    .jobdesc {
+        font-size: 35px;
+    }
+
+    .description h3 {
+        font-size: 25px;
+    }
+
+    .description p {
+        font-size: 13px;
+    }
+    /* end responsive home */
+
+    /* responsive jobdesk */
+    .card {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .card-content {
+        max-width: 100%; 
+        order: 2; 
+    }
+
+    .card-content h2 {
+        font-size: 32px;
+    }
+
+    .card-content p {
+        font-size: 16px;
+        text-align:left;
+    }
+
+    .project-leader {
+        grid-column: 1 / 4;
+    }
+
+    .project-leader ul {
+        margin: 10px;
+        text-align: left;
+    }
+
+    .card-image {
+        order: 1; 
+        margin-bottom: 20px; 
+    }
+    .card-image img {
+        height: auto;
+        width: 100%; 
+        max-width: 200px; 
+        margin: 0 auto; 
+    }
+    /* end responsive jobdesk */
+
+    /* responsive contact */
+    .border-container {
+        font-size: 40px;
+    }
+
+    .form-container {
+        width: 100%;
+        font-size: 19px;
+    }
+
+    .we-will {
+        font-size: 12px;
+    }
+
+    .side-form {
+        grid-template-columns: 1fr;
+    }
+
+    .mail {
+        padding-right: 0;
+    }
+    /* end responsive contact */
+
+
+    /* responsive footer */
+    .gradient-background {
+        margin-top: 120px;
+        padding: 60px;
+    }
+
+    .gradient-background h1 {
+        font-size: 31px;
+    }
+
+    .footer-section h2 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 5px;
+    }
+
+    .footer-section ul li a {
+        font-size: 14px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divider span::before,
+    .divider span::after {
+        width: 100px;
+    }
+    /* end responsive footer */
+}
+
+@media (width <= 600px) {
+    /* responsive navbar */
+    #navbar {
+        height: 60px;
+    }
+
+    .logo2 {
+        padding-left: 0px;
+    }
+
+    .logo2 img {
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    .logo2 span {
+        font-size: 10px;
+    }
+
+    .nav-menu {
+        padding-right: 0px;
+    }
+
+    .nav-menu a {
+        font-size: 10px;
+    }
+    /* end responsive navbar */
+    
+
+    /* responsive index */
+    header {
+        padding-top: 20px;
+    }
+
+     .title {
+        font-size: 25px;
+     }
+
+     .logo1 {
+        width: 20px;
+     }
+
+     .links a {
+        margin-top: 10px;
+        font-size: 10px;
+        padding: 5px;
+        border-radius: 30px;
+     }
+
+     .links i {
+        margin: 3px;
+     }
+
+    nav .links a:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    .slider {
+        width: 300px;
+        height: 150px;
+    }
+
+    .slider .buttons button {
+        width: 20px;
+        height: 20px;
+    }
+
+    .slider .dots li {
+        list-style: none;
+        width: 5px;
+        height: 5px;
+        margin: 5px;
+    }
+
+    .slider .dots li.active {
+        width: 25px;
+    }
+     /* end responsive index */
+
+    /* responsive home */
+    .name-bike {
+        font-size: 27px;
+        border-radius: 10px;
+    }
+
+    .container-home {
+        padding: 0px;
+    }
+
+    #hero p {
+        font-size: 14px;
+    }
+
+    #hero ul {
+        padding-right: 20px;
+    }
+
+    #hero ul li{
+        font-size: 7px;
+    }
+
+    #hero img {
+        width: 200px;
+    }
+
+    #product {
+        padding-top: 40px;
+    }
+    
+    #judul-product {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0 0 0;
+        margin-bottom: 0px;
+    }
+
+    .name-product {
+        font-size: 23px;
+        border-radius: 15px;
+        padding: 10px 50px;
+
+    }
+
+    .product-categories {
+        margin-top: 0px;
+
+    }
+
+    .product-category img {
+        width: 135px;
+    }
+
+    .product-category p {
+        font-size: 15px;
+    }
+
+    #result-section {
+        padding: 70px 10px 10px 10px;
+    }
+    
+    .result-container {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .result-label {
+        font-size: 23px;
+        padding: 10px 30px;
+        border-radius: 15px;
+    }
+
+    .dashboard img {
+        width: 200px;
+        margin-right: 0px;
+    }
+
+    .jobdesc {
+        display: flex;
+        margin-top: 100px;
+        font-size: 23px;
+        padding-left: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .jobdesc a {
+        padding: 10px 50px;
+        border-radius: 15px;
+    }
+
+    #jobs {
+        justify-content: center;
+    }
+
+    .description h3 {
+        font-size: 25px;
+    }
+
+    .description p {
+        font-size: 13px;
+    }
+
+    .job-role img {
+        width: 100px;
+    }
+    /* end responsive home */
+
+    /* responsive jobdesk */
+    .name-job {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 0 0 0;
+        font-size: 34px;
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    .card {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .card-content {
+        max-width: 100%; 
+        order: 2; 
+    }
+
+    .card-content h2 {
+        font-size: 32px;
+    }
+
+    .card-content p {
+        font-size: 16px;
+        text-align:left;
+    }
+
+    .project-leader {
+        grid-column: 1 / 4;
+    }
+
+    .project-leader ul {
+        margin: 10px;
+        text-align: left;
+    }
+
+    .card-image {
+        order: 1; 
+        margin-bottom: 20px; 
+    }
+    .card-image img {
+        height: auto;
+        width: 100%; 
+        max-width: 150px; 
+        margin: 0 auto; 
+    }
+    /* end responsive jobdesk */
+
+    /* responsive contact */
+    .border-container {
+        font-size: 25px;
+    }
+
+    .form-container {
+        width: 100%;
+        font-size: 19px;
+    }
+
+    .we-will {
+        font-size: 12px;
+    }
+
+    .side-form {
+        grid-template-columns: 1fr;
+    }
+
+    .mail {
+        padding-right: 0;
+    }
+
+    /* responsive footer */
+    .gradient-background {
+        margin-top: 80px;
+        padding: 40px;
+    }
+
+    .gradient-background h1 {
+        font-size: 20px;
+    }
+
+    .footer-section h2 {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 3px;
+    }
+
+    .footer-section ul li a {
+        font-size: 10px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divider span::before,
+    .divider span::after {
+        width: 10px; 
+    }
+    .button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button-link:hover {
+    background-color: darkblue;
+}
+    /* end responsive footer */
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Sales Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css3.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Bike Sales Dashboard</h1>
+            <h2>Bike Stores in the United States and Canada</h2>
+        </header>
+        <div class="filters">
+            <label for="filter-year">Select Year:</label>
+            <select id="filter-year">
+                <option value="all">All</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+            </select>
+        </div>
+        <div class="revenue-profit">
+            <div>Total Revenue United States: 30,599,566</div>
+            <div>Total Revenue Canada: 7,984,694</div>
+            <div>Total Profit United States: 13,820,106</div>
+            <div>Total Profit Canada: 3,256,789</div>
+        </div>
+        <div class="charts">
+            <div class="chart">
+                <h3>Top 5 Products by Order Quantity Year</h3>
+                <div class="chart-container">
+                    <div class="chart-item half-width">
+                        <h4>Canada</h4>
+                    <canvas id="horizontalBarChartCanada"></canvas>
+                </div>
+                <div class="chart-item half-width">
+                    <h4>United States</h4>
+                    <canvas id="horizontalBarChartUS"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <a href="/home.html" class="button">Home</a>
+            <a href="/chart2/chart2.html" class="button">Back</a>
+        </div>
+    </div>
+
+    <script src="chart3.js"></script>
+</body>
+</html>

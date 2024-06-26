@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+header h2 {
+    font-size: 1.2em;
+    color: #777;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filters select {
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.revenue-profit {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.revenue-profit div {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 22%;
+}
+
+.revenue-profit .revenue-us {
+    background-color: #007bff;
+}
+
+.revenue-profit .revenue-canada {
+    background-color: #dc3545;
+}
+
+.revenue-profit .profit-us {
+    background-color: #007bff;
+}
+
+.revenue-profit .profit-canada {
+    background-color: #dc3545;
+}
+
+.charts {
+    margin-bottom: 20px;
+}
+
+.chart {
+    margin-bottom: 20px;
+}
+
+.chart h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.chart-item {
+    width: 45%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chart-item h4 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Menambahkan margin antar tombol */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}

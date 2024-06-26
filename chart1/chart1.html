@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Sales Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style_chart1.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Bike Sales Dashboard</h1>
+            <h2>Bike Stores in the United States and Canada</h2>
+        </header>
+        <div class="filters">
+            <select id="filter-category">
+                <option value="category">Category</option>
+                <!-- Add more options dynamically here -->
+                <option value="desc">Descending</option>
+                <option value="asc">Ascending</option>
+            </select>
+            <select id="filter-season">
+                <option value="season">Season</option>
+                <!-- Add more options dynamically here -->
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+            </select>
+        </div>
+        <div class="revenue-profit">
+            <div>Total Revenue United States: 30,599,566</div>
+            <div>Total Revenue Canada: 7,984,694</div>
+            <div>Total Profit United States: 13,820,106</div>
+            <div>Total Profit Canada: 3,256,789</div>
+        </div>
+        <div class="charts">
+            <div class="chart">
+                <h3>Order Quantity by Product Category by Country</h3>
+                <div class="chart-container">
+                    <div class="chart-item half-width">
+                        <h4>United States</h4>
+                        <canvas id="bardUSChart"></canvas>
+                    </div>
+                    <div class="chart-item half-width">
+                        <h4>Canada</h4>
+                        <canvas id="bardCanadaChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="chart">
+                <h3>Order Quantity by Gender</h3>
+                <div class="chart-container">
+                    <div class="chart-item half-width">
+                        <h4>Order Quantity by Gender - US</h4>
+                        <canvas id="pieUSChart"></canvas>
+                    </div>
+                    <div class="chart-item half-width">
+                        <h4>Order Quantity by Gender - Canada</h4>
+                        <canvas id="pieCanadaChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="chart">
+                <h3>Order Quantity by Age Group</h3>
+                <div class="chart-container">
+                    <div class="chart-item half-width">
+                        <h4>United States</h4>
+                        <canvas id="lineUSChart"></canvas>
+                    </div>
+                    <div class="chart-item half-width">
+                        <h4>Canada</h4>
+                        <canvas id="lineCanadaChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <a href="/home.html" class="button">Home</a>
+        <a href="/chart2/chart2.html" class="button">Next</a>
+    </div>
+
+    <script src="chart1.js"></script>
+</body>
+</html>
